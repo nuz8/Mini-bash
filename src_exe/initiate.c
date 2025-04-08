@@ -6,7 +6,7 @@
 /*   By: pamatya <pamatya@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 21:46:09 by pamatya           #+#    #+#             */
-/*   Updated: 2025/02/02 18:48:56 by pamatya          ###   ########.fr       */
+/*   Updated: 2025/04/08 12:31:01 by pamatya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void	init_shell(t_shell *shl, int ac, char **av, char **envp)
 	shl->cwd = getcwd(NULL, 0);
 	if (!shl->cwd)
 		exit_early(shl, NULL, "getcwd");
-	set_prompt(shl, "<< ", " >> % ");
+	set_prompt(shl, "", " % ");
 }
 
 /*

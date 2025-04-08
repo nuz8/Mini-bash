@@ -6,7 +6,7 @@
 #    By: pamatya <pamatya@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: Invalid date        by                   #+#    #+#              #
-#    Updated: 2025/02/02 14:27:03 by pamatya          ###   ########.fr        #
+#    Updated: 2025/04/08 12:16:11 by pamatya          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,7 +87,7 @@ DEP			= 	$(OBJ:.o=.d)
 
 # ----------------- Target Binary ----------------- #
 
-NAME		=	minishell
+NAME		=	mini-bash
 
 # ----------------- Headers Flag ----------------- #
 
@@ -146,7 +146,7 @@ all: $(NAME)
 	@echo "$(GREEN)Compilation finished$(RESET)"
 
 $(NAME): $(OBJ)
-	@echo "Compiling minishell..."
+	@echo "Compiling mini-bash..."
 	@make -sC $(D_LIB)
 	@$(CC) $(CFLAGS) $(HEADS_FLG) $^ $(LIBS_FLG) -o $@ 
 

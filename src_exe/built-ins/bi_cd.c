@@ -6,7 +6,7 @@
 /*   By: pamatya <pamatya@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 14:42:30 by pamatya           #+#    #+#             */
-/*   Updated: 2025/02/02 19:48:47 by pamatya          ###   ########.fr       */
+/*   Updated: 2025/04/08 12:30:56 by pamatya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	mini_cd(t_shell *shl, t_cmds *cmd)
 		if (compare_strings(arg, "-", 1) == 1)
 			printf("%s\n", shl->cwd);
 		free(shl->prompt);
-		set_prompt(shl, "<< ", " >> % ");
+		set_prompt(shl, "", " % ");
 	}
 	else
 		cmd->exit_code = ERRCODE_GENERAL;
