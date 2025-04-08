@@ -44,5 +44,5 @@ cd Mini-bash
 # Compile the program
 make
 
-# Run minishell
+# Run mini-bash
 ./mini-bash
